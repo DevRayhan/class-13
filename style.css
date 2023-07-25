@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1127px;
+    margin: 0 auto;
+}
+
+/* ________________________________header section start _______________*/
+.logo{
+    width: 15%;
+    display: inline-block;
+    margin-top: 27px;
+    margin-left: 17px;
+}
+.logo img{
+    width: 100%;
+    display: inline-block;
+}
+.menu{
+    width: 80%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 27px;
+
+}
+.menu ul{
+    text-align: right;
+
+}
+.menu ul li{
+    display: inline-block;
+    
+}
+.menu ul li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    transition: .7s;
+    font-size: 17px;
+    margin-left: 17px;
+    
+}
+.menu ul li a:hover{
+    color: orangered;
+}
+.menuLogo{
+    background-image: url(https://i.ibb.co/tqq8GHH/photo-1471879832106-c7ab9e0cee23.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 350px;
+    /* background-attachment: fixed; */
+
+}
+.herotext{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    margin-top: 90px;
+}
+.herotext::before{
+    content: "\f10d";
+    position: absolute;
+    top: 0;
+    left: 337px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: orangered;
+}
+.herotext::after{
+    content: "\f10e";
+    position: absolute;
+    top: 0;
+    right: 337px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: orangered;
+}
+
+/* ________________________________about section start _______________*/
+.about{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.img {
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    border: 1px solid crimson;
+    box-shadow: 1px 1px 17px black;
+    position: absolute;
+    top: 113px;
+    left: 97px;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.textAbout {
+    width: 60%;
+    position: absolute;
+    top: 90px;
+    left: 320px;
+}
+.textAbout h3{
+    margin-left: 116px;
+}
+
+/* ________________________________service section start _______________*/
+.serviceGrid{
+    text-align: center;
+    background-color: #2e3e4e;
+    padding: 30px 0;
+}
+.serviceGrid h2{
+    color: brown;
+}
+i{
+    color: white;
+    padding: 17px;
+    background-color: brown;
+    border-radius: 0 30px 0 30px;
+    display: inline-block;
+    margin: 20px 0;
+}
+.service1 a{
+    display: inline-block;
+    background-color: brown;
+    padding: 7px 17px;
+    border-radius: 7px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 1;
+    
+}
+.service1 a::after{
+    background-color: rgb(219, 29, 29);
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    content: "";
+    border-radius: 7px;
+    z-index: -1;
+    transition: .5s;
+}
+.service1 a:hover::after{
+    width: 100%;
+}
+
+.service1{
+    display: inline-block;
+    margin: 30px 60px;
+    list-style: none;
+    line-height: 31px;
+    color: white;
+}
+.service1 ul li{
+    list-style: none;
+    position: relative;
+}
+.service1 ul li::before{
+    position: absolute;
+    content: "\f560";
+    color: brown;
+    left: -20px;
+    top: 0;
+    font-family: "Font Awesome 5 Free" ;
+    font-weight: 600;
+}
+/* ________________________________contuct section start _______________*/
+.contuctMain{
+    width: 350px;
+    text-align: center;
+    margin: 30px auto;
+}
+.contuctMain h2{
+    color: brown;
+}
+input{
+    width: 100%;
+    padding: 13px 23px;
+    border: none;
+    border-bottom: 1px solid brown;
+    outline: none;
+    margin-top: 20px;
+}
+button {
+    padding: 14px 69px;
+    margin-top: 27px;
+    background-color: brown;
+    border: none;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    font-size: 17px;
+    color: wheat;
+    border: none;
+    
+}
+button::before{
+    content: "";
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(219, 29, 29);
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px 0 0 10px;
+    transition: .5s;
+    display: inline-block;
+}
+button:hover::before{
+    width: 50%;
+}
+button::after{
+    content: "";
+    width: 0;
+    top: 0;
+    right: 0;
+    background-color: rgb(219, 29, 29);
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    border-radius: 0 10px 10px 0;
+    transition: .5s;
+    display: inline-block;
+}
+button:hover::after{
+    width: 50%;
+}
+/* _____________________________footer section start _______________*/
+.footer{
+    text-align: center;
+    font-size: 23px;
+    padding: 30px 10px;
+    background-color: #2e3e4e;
+    color: white;
+}

@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h3{
+    text-align: center;
+    background-color: rgb(16, 185, 185);
+    padding: 13px;
+    font-size: 27px;
+    color: yellow;
+}
+h3::before{
+    content:"Before__ ";
+    
+}
+h3::after{
+    content:" __After";
+}
+.testmonial{
+    text-align: center;
+}
+.testmonial h2::before{
+    content:' " ';
+}
+.testmonial h2::after{
+    content:' " ';
+}
+.button{
+    text-align: center;
+    font-size: 27px;
+    margin-top: 50px;
+}
+.button a{
+    display: inline-block;
+    background-color: cyan;
+    text-decoration: none;
+    color: yellow;
+    padding: 10px 24px;
+    border-radius: 13px;
+    position: relative;
+    z-index: 1;
+}
+.button a::before{
+    content: "";
+    background-color: burlywood;
+    position: absolute;
+    width:0;
+    height: 100% ;
+    top: 0;
+    left: 0;
+    border-radius: 13px;
+    transition: .7s;
+    z-index: -1;
+}
+.button a:hover::before{
+    width: 100%;
+}
+
+
+.button2{
+    text-align: left;
+    font-size: 27px;
+    margin-top: 50px;
+}
+.button2 a{
+    display: inline-block;
+    background-color: cyan;
+    text-decoration: none;
+    color: yellow;
+    padding: 10px 24px;
+    border-radius: 13px;
+    position: relative;
+    z-index: 1;
+}
+.button2 a::before{
+    content: "";
+    background-color: burlywood;
+    position: absolute;
+    width:100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-radius: 13px;
+    transition: .7s;
+    z-index: -1;
+}
+.button2 a:hover::before{
+    height: 100%;
+}
+
+
+
+.button3{
+    text-align: center;
+    font-size: 27px;
+    margin-top: 50px;
+}
+.button3 a{
+    display: inline-block;
+    background-color: cyan;
+    text-decoration: none;
+    color: yellow;
+    padding: 10px 24px;
+    border-radius: 13px;
+    position: relative;
+    z-index: 1;
+}
+.button3 a::before{
+    content: "";
+    background-color: burlywood;
+    position: absolute;
+    width:100%;
+    height:100%;
+    top: 0;
+    left:0 ;
+    border-radius: 13px;
+    transition: .7s;
+    z-index: -1;
+}
+.button3 a:hover::before{
+    height: 0%;
+    width: 0%;
+}
+
+
+
+.button4{
+    text-align: right;
+    font-size: 27px;
+    margin-top: -150px;
+}
+.button4 a{
+    display: inline-block;
+    background-color: cyan;
+    text-decoration: none;
+    color: yellow;
+    padding: 10px 24px;
+    border-radius: 13px;
+    position: relative;
+    z-index: 1;
+}
+.button4 a::before{
+    content: "";
+    background-color: burlywood;
+    position: absolute;
+    width:100%;
+    height:100%;
+    top: 0;
+    right:0 ;
+    border-radius: 13px;
+    transition: .7s;
+    z-index: -1;
+}
+.button4 a:hover::before{
+    height: 0%;
+    width: 0%;
+}
+
+
+
